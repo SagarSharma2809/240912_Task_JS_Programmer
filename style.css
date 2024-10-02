@@ -42,16 +42,23 @@ h1 {
 }
 
 table {
-    border-collapse: collapse;
+
     border: 2px solid lightgray;
     text-align: left;
+    border-collapse: collapse;
 
+}
+
+table tr:hover {
+    background-color: aliceblue;
+    cursor: pointer;
 }
 
 table th {
     font-weight: 400;
     vertical-align: top;
     padding: 0.8rem;
+
 }
 
 table td {
@@ -60,6 +67,7 @@ table td {
 
 /* border in first row */
 table tr:first-child {
+
     border: 2px solid lightgray;
     background-color: aliceblue;
 }
@@ -71,8 +79,29 @@ td:nth-child(3) {
 }
 
 table tr:last-of-type td {
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
+    border: none;
 
+
+}
+
+table tr:last-of-type:hover {
+    background-color: white;
+
+
+}
+
+
+table tr:last-of-type td:nth-child(3) {
+    padding-bottom: 4rem;
+    border-right: 2px solid lightgray;
+
+}
+
+table td:nth-child(5),
+td:nth-child(6),
+td:last-child {
+    padding: 0 0 0.1rem 0.1rem;
 }
 
 /* making units lighter */
@@ -86,4 +115,23 @@ table tr:last-of-type td {
 /* break between words in column heading */
 .packSize span {
     display: block;
+}
+
+.box {
+    border: 2px solid lightgray;
+    padding: 0.6rem;
+    margin: 0;
+    text-align: right;
+}
+
+.selected {
+
+    background-color: aliceblue;
+}
+
+.edit {
+
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: gray;
 }
